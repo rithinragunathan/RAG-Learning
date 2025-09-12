@@ -1,0 +1,8 @@
+__pycache__/
+*.log
+.DS_Store
+.env
+.vscode/
+VectorDB/
+test.py
+files/
