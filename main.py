@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 import chromadb
 from chromadb.utils import embedding_functions
+from disease import main
+
 
 folder_path = "folder/"
 
@@ -66,7 +68,7 @@ def logic():
             print(f"Skipping chunk {i} due to embedding error.")
 
     # ---- Step 5: Query top chunks for fixed question ----
-    query = "is india and rusia and usa pal or foe"
+    query = main()
     query_emb = get_embedding(query, emb_model)
     if not query_emb:
         return "Error: Could not generate embedding for the query."
@@ -79,7 +81,7 @@ def logic():
         return "No relevant documents found for the query."
 
     # ---- Step 6: Ask model with retrieved context ----
-    prompt = f"Here is some text from a document:\n{context_text}\n\nQuestion: {query}\nAnswer:"
+    prompt = f"Here is some text from a document:\n{context_text}\n\nQuestion: {query} how to prevent it\nAnswer:"
     try:
         response = model.generate_content(prompt)
         return response.text
@@ -89,3 +91,4 @@ def logic():
 # Example usage
 if __name__ == "__main__":
     print(logic())
+    

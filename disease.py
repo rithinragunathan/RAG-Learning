@@ -12,3 +12,4 @@ def main():
         cls_id = int(box.cls[0])
         cls_name = model.names[cls_id]
         return (cls_name)
+main()
