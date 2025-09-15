@@ -8,7 +8,7 @@ Signs of Infestation:
 - Frass (caterpillar droppings) on leaves and ground
 
 Management Strategies:
-1. Mechanical: Remove and destroy infested leaves and caterpillars.
+1. **Mechanical**: Remove and destroy infested leaves and caterpillars.
 2. Biological: Encourage natural predators like parasitoid wasps and birds.
 3. Chemical: Apply recommended insecticides as a last resort, following safety guidelines.
 4. Cultural: Maintain field hygiene and monitor regularly for early detection.
