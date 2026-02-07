@@ -10,22 +10,6 @@ The project supports local image prediction as well as an API interface for inte
 This system loads a pretrained PyTorch model and performs image classification to predict diseases from input images.  
 It is designed to be simple, modular, and reusable for academic, demo, or prototype use cases.
 
----
-
-## Repository Structure
-
-├── folder/ # Supporting files / dataset / utilities
-├── .gitignore # Git ignored files
-├── best.pt # Trained PyTorch model
-├── disease.py # Core disease prediction logic
-├── main.py # Run prediction locally
-├── main_api.py # API server for predictions
-├── test.jpg # Sample image for testing
-├── README.md # Project documentation
-
-
----
-
 ## Features
 
 - Image-based disease detection
